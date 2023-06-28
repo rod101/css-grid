@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  color: #fff;
+  padding: 0 200px;
+  align-items: center;
+  
+}
+
+.logo-container {
+  padding: 15px;
+  margin-left: 15px;
+}
+
+header {
+  position: relative;
+  background-color: #c7c7c7;
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 0rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.slogan {
+  position: absolute;
+  top: 58%;
+  line-height: 0rem;
+  font-size: 1.07rem;
+  color: #000;
+}
+
+.floored-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  width: min(95%, 80rem);
+  margin-inline: auto;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+.grid-col-span-3 {
+  grid-column: span 3;
+}
+
+.floor {
+  background-color: blueviolet;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+}
+
+.largeBlock {
+  height: 50vh;
+}
+
+.smallBlock {
+  height: 30vh;
+}
+
+.floor:first-child {
+  background-color: red !important;
+  background-image: url(../images/pexels-christian-domingues-731022.jpg);
+  background-size: cover;
+  border-radius: 100px 0 0 0;
+}
+
+.floor:nth-child(2) {
+  background-color: blue !important;
+  background-image: url(../images/pexels-max-rahubovskiy-6198655.jpg);
+  background-size: cover;
+  border-radius: 0 100px 0 0;
+}
+
+.floor:nth-child(3) {
+  background-color: green !important;
+  background-image: url(../images/pexels-vecislavas-popa-1571470.jpg);
+  background-size: cover;
+  border-radius: 0 0 0 100px;
+}
+
+.floor:nth-child(4) {
+  background-color: yellow !important;
+  background-image: url(../images/pexels-vecislavas-popa-1571458.jpg);
+  background-size: cover;
+}
+
+.floor:nth-child(5) {
+  background-color: yellow !important;
+  background-image: url(../images//pexels-ilya-shakir-2440471.jpg);
+  background-size: cover;
+
+  border-radius: 0 0 100px 0;
+}
+
+.text-area {
+  display: grid;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  line-height: 0.2rem;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  line-height: 0.2rem;
+}
+
+.build:first-child {
+  background-color: red !important;
+  background-image: url(../images/pexels-christian-domingues-731022.jpg);
+  background-size: cover;
+  border-radius: 100px 0 0 0;
+}
+
+.build:nth-child(2) {
+  background-color: blue !important;
+  background-image: url(../images/pexels-max-rahubovskiy-6198655.jpg);
+  background-size: cover;
+  border-radius: 0 100px 0 0;
+}
+
+.build:nth-child(3) {
+  background-color: green !important;
+  background-image: url(../images/pexels-vecislavas-popa-1571470.jpg);
+  background-size: cover;
+  border-radius: 0 0 0 100px;
+}
+
+.build:nth-child(4) {
+  background-color: yellow !important;
+  background-image: url(../images/pexels-vecislavas-popa-1571458.jpg);
+  background-size: cover;
+  border-radius: 0 0 100px 0;
+}
+
+
+.hero {
+ background-image: url('../images/slider/floors-header-slider-desktop-1.jpg');
+ height: 900px;
+ border-radius:  0 0 100px 100px;
+
+}
+
+
+.heroBtn {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  background: #2a2c2f;
+  border-radius: 2rem;
+  font-family: GothamBold;
+  font-size: clamp(.68rem,.83rem + .24vw,1rem);
+  transition: background .2s;
+}
+/* 
+
+
+.hero {
+  position: relative;
+}
+
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 10s infinite;
+}
+
+@keyframes fade {
+  0%,
+  20% {
+    opacity: 0;
+    z-index: 1;
+  }
+  25%,
+  95% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 10s infinite;
+}
+
+.hero-slide:nth-child(1) {
+  background-image: url("../images/slider/floors-header-slider-desktop-1.jpg");
+}
+
+.hero-slide:nth-child(2) {
+  background-image: url("../images/slider/floors-header-slider-desktop-2.jpg");
+}
+
+.hero-slide:nth-child(3) {
+  background-image: url("../images/slider/floors-header-slider-desktop-3.jpg");
+} */
